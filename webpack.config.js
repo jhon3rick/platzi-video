@@ -62,7 +62,8 @@ module.exports = (env) => {
             loader: 'url-loader',
             options: {
               limit: 10000,
-              path: './',
+              publicPath: './dist/',
+              useRelativePath: false,
               fallback: 'file-loader',
               name: 'images/[name].[hash].[ext]',
             }
